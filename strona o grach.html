@@ -1,0 +1,464 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<IMG SRC="ag00190_.gif" WIDTH="128" HEIGHT="93" BORDER="0" ALT="Rozmiar: 9101 bajtów"><FONT SIZE="+7"><FONT SIZE="+7"></FONT></FONT><HTML>
+<HEAD>
+
+
+
+<STYLE TYPE="text/css">
+<!--
+.clock
+{
+ position:absolute;
+ top: 100px;
+ width:80pt;
+ font-family: Times New Roman;
+ font-size:80px;
+ color:navy;
+ visibility:hidden;
+}
+// -->
+</style>
+<!--                                             -->
+<!--      JavaScript Example, freeware           -->
+<!--                                             -->
+<!-- Copyright (c) 1997,98 by Wojciech Wysznacki -->
+<!-- E-mail: woytek@polbox.com                   -->
+<!-- WWW   : http://www.polbox.com/w/woytek      -->
+<!--                                             -->
+<SCRIPT LANGUAGE="JavaScript1.2">
+<!--
+timerRunning = null
+first=1
+var	hour1, hour2, minute1, minute2, second1, second2;
+function clock()
+{
+ ohour1   = hour1
+ ohour2   = hour2
+ ominute1 = minute1
+ ominute2 = minute2
+ osecond1 = second1
+ osecond2 = second2
+ if(++second2 > 9)		{ second2=0
+  if(++second1 >5)		{ second1=0
+   if(++minute2 > 9)	{ minute1=0
+    if(++minute2 > 5)	{ minute2=0
+     if(++hour2 > 9)	{ hour2=0
+ 	  if(++hour1 > 2)	{ hour1 =0 }
+	 }
+    }
+   }
+  }
+ }
+ if(document.layers) var w=innerWidth/2-185
+ else var w=document.body.offsetWidth/2-185
+ if (ohour1 != hour1 || first) {
+	if(document.layers) {
+		document.layers["z0"+ohour1].visibility="hidden"
+		document.layers["z0"+hour1].left=w
+		document.layers["z0"+hour1].visibility="visible"
+	}
+	else {
+		document.all["z0"+ohour1].style.visibility="hidden"
+		document.all["z0"+hour1].style.left=w
+		document.all["z0"+hour1].style.visibility="visible"
+	}
+ }
+ if (ohour2 != hour2 || first)  {
+	if(document.layers) {
+		document.layers["z1"+ohour2].visibility="hidden"
+		document.layers["z1"+hour2].left=w+44
+		document.layers["z1"+hour2].visibility="visible"
+	}
+	else {
+		document.all["z1"+ohour2].style.visibility="hidden"
+		document.all["z1"+hour2].style.left=w+44
+		document.all["z1"+hour2].style.visibility="visible"
+	}
+ }
+ if (ominute1 != minute1 || first) {
+	if(document.layers) {
+		document.layers["z2"+ominute1].visibility="hidden"
+		document.layers["z2"+minute1].left=w+117
+		document.layers["z2"+minute1].visibility="visible"
+	}
+	else {
+		document.all["z2"+ominute1].style.visibility="hidden"
+		document.all["z2"+minute1].style.left=w+117
+		document.all["z2"+minute1].style.visibility="visible"
+	}
+ }
+ if (ominute2 != minute2 || first) {
+	if(document.layers) {
+		document.layers["z3"+ominute2].visibility="hidden"
+		document.layers["z3"+minute2].left=w+161
+		document.layers["z3"+minute2].visibility="visible"
+	}
+	else {
+		document.all["z3"+ominute2].style.visibility="hidden"
+		document.all["z3"+minute2].style.left=w+161
+		document.all["z3"+minute2].style.visibility="visible"
+	}
+ }
+ if (osecond1 != second1 || first) {
+	if(document.layers) {
+		document.layers["z4"+osecond1].visibility="hidden"
+		document.layers["z4"+second1].left=w+234
+		document.layers["z4"+second1].visibility="visible"
+	}
+	else {
+		document.all["z4"+osecond1].style.visibility="hidden"
+		document.all["z4"+second1].style.left=w+234
+		document.all["z4"+second1].style.visibility="visible"
+	}
+ }
+ if(document.layers) {
+	document.layers["z5"+osecond2].visibility="hidden"
+	document.layers["z5"+second2].left=w+278
+	document.layers["z5"+second2].visibility="visible"
+ }
+ else {
+	document.all["z5"+osecond2].style.visibility="hidden"
+	document.all["z5"+second2].style.left=w+278
+	document.all["z5"+second2].style.visibility="visible"
+ }
+ if (first) {
+	if(document.layers) {
+		document.z1.left= w+88;
+		document.z1.top = 94;
+		document.z1.visibility = "visible"
+		document.z2.left= w+205;
+		document.z2.top = 94;
+		document.z2.visibility = "visible"
+	}
+	else {
+		z1.style.left= w+88;
+		z1.style.top = 94;
+		z1.style.visibility = "visible"
+		z2.style.left= w+205;
+		z2.style.top = 94;
+		z2.style.visibility = "visible"
+	}
+ }
+ first = 0
+ timerID = setTimeout("clock()",1000)
+}
+function start()
+{
+ var now = new Date()
+ var hour = now.getHours()
+ var minute = now.getMinutes()
+ var sec = now.getSeconds()
+ if (hour < 10)	hour = "0" + hour
+ hour += ""
+ hour1 = parseInt(hour.charAt(0))
+ hour2 = parseInt(hour.charAt(1))
+ if (minute < 10) minute = "0" + minute
+ minute += ""
+ minute1 = parseInt(minute.charAt(0))
+ minute2 = parseInt(minute.charAt(1))
+ if (sec < 10) sec = "0" + sec
+ sec += ""
+ second1 = parseInt(sec.charAt(0))
+ second2 = parseInt(sec.charAt(1))
+ clock()
+}
+// -->
+</SCRIPT>
+
+
+
+
+
+<STYLE TYPE="text/css">
+<!--
+.clock
+{
+ position:absolute;
+ top: 100px;
+ width:80pt;
+ font-family: Times New Roman;
+ font-size:80px;
+ color:navy;
+ visibility:hidden;
+}
+// -->
+</style>
+<!--                                             -->
+<!--      JavaScript Example, freeware           -->
+<!--                                             -->
+<!-- Copyright (c) 1997,98 by Wojciech Wysznacki -->
+<!-- E-mail: woytek@polbox.com                   -->
+<!-- WWW   : http://www.polbox.com/w/woytek      -->
+<!--                                             -->
+<SCRIPT LANGUAGE="JavaScript1.2">
+<!--
+timerRunning = null
+first=1
+var	hour1, hour2, minute1, minute2, second1, second2;
+function clock()
+{
+ ohour1   = hour1
+ ohour2   = hour2
+ ominute1 = minute1
+ ominute2 = minute2
+ osecond1 = second1
+ osecond2 = second2
+ if(++second2 > 9)		{ second2=0
+  if(++second1 >5)		{ second1=0
+   if(++minute2 > 9)	{ minute1=0
+    if(++minute2 > 5)	{ minute2=0
+     if(++hour2 > 9)	{ hour2=0
+ 	  if(++hour1 > 2)	{ hour1 =0 }
+	 }
+    }
+   }
+  }
+ }
+ if(document.layers) var w=innerWidth/2-185
+ else var w=document.body.offsetWidth/2-185
+ if (ohour1 != hour1 || first) {
+	if(document.layers) {
+		document.layers["z0"+ohour1].visibility="hidden"
+		document.layers["z0"+hour1].left=w
+		document.layers["z0"+hour1].visibility="visible"
+	}
+	else {
+		document.all["z0"+ohour1].style.visibility="hidden"
+		document.all["z0"+hour1].style.left=w
+		document.all["z0"+hour1].style.visibility="visible"
+	}
+ }
+ if (ohour2 != hour2 || first)  {
+	if(document.layers) {
+		document.layers["z1"+ohour2].visibility="hidden"
+		document.layers["z1"+hour2].left=w+44
+		document.layers["z1"+hour2].visibility="visible"
+	}
+	else {
+		document.all["z1"+ohour2].style.visibility="hidden"
+		document.all["z1"+hour2].style.left=w+44
+		document.all["z1"+hour2].style.visibility="visible"
+	}
+ }
+ if (ominute1 != minute1 || first) {
+	if(document.layers) {
+		document.layers["z2"+ominute1].visibility="hidden"
+		document.layers["z2"+minute1].left=w+117
+		document.layers["z2"+minute1].visibility="visible"
+	}
+	else {
+		document.all["z2"+ominute1].style.visibility="hidden"
+		document.all["z2"+minute1].style.left=w+117
+		document.all["z2"+minute1].style.visibility="visible"
+	}
+ }
+ if (ominute2 != minute2 || first) {
+	if(document.layers) {
+		document.layers["z3"+ominute2].visibility="hidden"
+		document.layers["z3"+minute2].left=w+161
+		document.layers["z3"+minute2].visibility="visible"
+	}
+	else {
+		document.all["z3"+ominute2].style.visibility="hidden"
+		document.all["z3"+minute2].style.left=w+161
+		document.all["z3"+minute2].style.visibility="visible"
+	}
+ }
+ if (osecond1 != second1 || first) {
+	if(document.layers) {
+		document.layers["z4"+osecond1].visibility="hidden"
+		document.layers["z4"+second1].left=w+234
+		document.layers["z4"+second1].visibility="visible"
+	}
+	else {
+		document.all["z4"+osecond1].style.visibility="hidden"
+		document.all["z4"+second1].style.left=w+234
+		document.all["z4"+second1].style.visibility="visible"
+	}
+ }
+ if(document.layers) {
+	document.layers["z5"+osecond2].visibility="hidden"
+	document.layers["z5"+second2].left=w+278
+	document.layers["z5"+second2].visibility="visible"
+ }
+ else {
+	document.all["z5"+osecond2].style.visibility="hidden"
+	document.all["z5"+second2].style.left=w+278
+	document.all["z5"+second2].style.visibility="visible"
+ }
+ if (first) {
+	if(document.layers) {
+		document.z1.left= w+88;
+		document.z1.top = 94;
+		document.z1.visibility = "visible"
+		document.z2.left= w+205;
+		document.z2.top = 94;
+		document.z2.visibility = "visible"
+	}
+	else {
+		z1.style.left= w+88;
+		z1.style.top = 94;
+		z1.style.visibility = "visible"
+		z2.style.left= w+205;
+		z2.style.top = 94;
+		z2.style.visibility = "visible"
+	}
+ }
+ first = 0
+ timerID = setTimeout("clock()",1000)
+}
+function start()
+{
+ var now = new Date()
+ var hour = now.getHours()
+ var minute = now.getMinutes()
+ var sec = now.getSeconds()
+ if (hour < 10)	hour = "0" + hour
+ hour += ""
+ hour1 = parseInt(hour.charAt(0))
+ hour2 = parseInt(hour.charAt(1))
+ if (minute < 10) minute = "0" + minute
+ minute += ""
+ minute1 = parseInt(minute.charAt(0))
+ minute2 = parseInt(minute.charAt(1))
+ if (sec < 10) sec = "0" + sec
+ sec += ""
+ second1 = parseInt(sec.charAt(0))
+ second2 = parseInt(sec.charAt(1))
+ clock()
+}
+// -->
+</SCRIPT>
+
+
+
+
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+//author: Jan_P@dds.nl
+var timerID = null
+var timerRunning = false
+var charNo = 0
+var charMax = 0
+var lineNo = 0
+var lineMax = 3
+var lineArr = new Array(lineMax)
+var urlArr = new Array(lineMax)
+
+lineArr[1] = "minickip"                  
+urlArr[1] = "http://www.miniclip.com.pl/skryba/"
+lineArr[2] = "wis³a kraków"                  
+urlArr[2] = "http://www.kibicewisly.pl"
+lineArr[3] = "AltaVista"                  
+urlArr[3] = "http://www.altavista.com"
+
+
+var lineText = lineArr[1]
+function StartShow() {
+	StopShow()
+	ShowLine()
+	timerRunning = true
+}
+function FillSpaces() {
+	for (var i = 1; i <= lineWidth; i++) {
+		spaces += " "
+	}
+}
+function StopShow() {
+	if (timerRunning) {
+		clearTimeout(timerID)
+		timerRunning = false
+	}
+}
+function ShowLine() {
+	if (charNo == 0) { // Next line
+		if (lineNo < lineMax) 	{
+			lineNo++
+		}
+		else {
+			lineNo = 1
+		}
+		lineText = lineArr[lineNo]
+		charMax = lineText.length
+	}
+	if (charNo <= charMax) { // Next char
+		document.formDisplay.buttonFace.value = lineText.substring(0, charNo)
+		charNo++
+		timerID = setTimeout("ShowLine()", 100)
+	}
+	else {
+		charNo = 0
+		timerID = setTimeout("ShowLine()", 3000)
+	}
+}
+function GotoUrl(url)
+{
+	top.location.href = url
+}
+// end hide -->
+</SCRIPT>
+
+
+
+
+
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=iso-8859-2">
+</HEAD>
+<BODY BGCOLOR="#66CC33" TEXT="#FF3333" LINK="#CC33FF" ALINK="#FFFF99" VLINK="#66FFFF">
+<FONT SIZE="+5"></FONT><MARQUEE ALIGN="MIDDLE" BGCOLOR="#6600FF" LOOP="I<FONT SIZE="+7"><FONT SIZE="+7"></FONT></FONT>NFINITE"><MARQUEE ALIGN="MIDDLE" LOOP="INFINITE">Cze¶æ witam na mojej stronie.</MARQUEE></MARQUEE><br>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+document.write("<FORM NAME=\"formDisplay\">");
+document.write("<INPUT TYPE=\"BUTTON\" NAME=\"buttonFace\" VALUE=\"&{lineText}\" SIZE=\"18\" onClick=\"GotoUrl(urlArr[lineNo])\">");
+document.write("</FORM>");
+StartShow();
+//-->
+</SCRIPT>
+
+
+
+
+
+
+
+Je¶li jestes za Cracowi± to wychodz ztej strony szybko!!!!!<FONT SIZE="+7">
+
+
+
+
+
+
+<IMG SRC="gun.gif" WIDTH="120" HEIGHT="90" BORDER="0" ALT="Rozmiar: 3150 bajtów"> <A HREF="i:/mp3/britney spears feat madonna - me against the music.mp3">
+Polecam ci stronê z grami www. miniclip.com
+
+</A>
+</FONT>
+
+
+
+
+
+
+
+
+
+</BODY>
+</HTML><FONT SIZE="+7"></FONT>

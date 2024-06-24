@@ -1,0 +1,7 @@
+$login="matkornecki";
+$imie="Mateusz";
+$nazwisko="Kornecki";
+$rodeo="2";
+$stan="uczestnik";
+$data="";
+$uwagi="";
